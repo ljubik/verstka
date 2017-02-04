@@ -1,319 +1,126 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
+   
     <link rel="stylesheet" href="css/index.css">
-    
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <link rel="stylesheet" media="(min-width: 450px)" href="css/main.css">
-    <link rel="stylesheet" media="(max-width: 450px)" href="css/main-sm.css">
-    
     <meta name="description" content="Сервис поможет быстро и недорого заказать официальное такси на сайте или в мобильном приложении. Подача машины — 7 минут. Оплата наличными или картой.">
     <meta name="keywords" content="Яндекс.Такси, такси, заказать такси, вызвать такси, яндекс такси">
 </head>
+
 <body>
-    <div class="header2 header2_lang_ru header2_theme_full header2_tableau_yes header2_panels_yes tableau-node tableau-node_global_yes i-bem header2_js_inited tableau-node_js_inited" id="header" role="banner" data-bem="{&quot;header2&quot;:{},&quot;tableau-node&quot;:{}}">
-            <div class="header2__main">
-                <div class="header2__ya-logo">
-                    <div class="ya-logo ya-logo_lang_ru">
-                        <a class="ya-logo__yandex link tableau-node__trigger i-bem link_js_inited" title="Яндекс" href="https://yandex.ua/" tabindex="-1"></a>
-                        <a class="ya-logo__service-name ya-logo__service-name_service_taxi link i-bem link_js_inited" href="https://taxi.yandex.ua/?lang=ru#index" title="Такси" tabindex="-1"></a>
-                    </div>
-                </div>
-                <div class="header2__middle">
-                    <div class="header2__middle-wrap">
-                        <div class="header2__left">
-                            <div class="navigate-razdel i-bem navigate-razdel_js_inited" data-bem="{&quot;navigate-razdel&quot;:{}}">
-                                <ul class="list list_preset_horiz i-bem list_js_inited">
-                                    <li class="list__item" data-class-list__item_counter_yes="router.url | routerUrl index | not" data-class-list__item_counter-show_yes="orders.orders | getLength"><a class="link link_state_current link_theme_normal i-bem" tabindex="0" href="https://taxi.yandex.ua/#index" data-bem="{&quot;link&quot;:{&quot;_tabindex&quot;:&quot;0&quot;,&quot;origTabindex&quot;:&quot;0&quot;}}">Заказ такси</a>
-                                        <span
-                                            class="counter" data-text="orders.orders | getLength">0</span>
-                                    </li>
-                                    <li class="list__item"><a class="link link_theme_normal i-bem link_js_inited" tabindex="0" href="https://yandex.ua/support/taxi/?lang=ru" data-bem="{&quot;link&quot;:{&quot;_tabindex&quot;:&quot;0&quot;,&quot;origTabindex&quot;:&quot;0&quot;}}">Служба поддержки</a></li>
-                                    <li
-                                        class="list__item list__item_type_more" style="display: none;">
-                                        <div class="dropdown-menu dropdown-menu_theme_ffffff dropdown-menu_size_m i-bem" data-bem="{&quot;dropdown-menu&quot;:{}}"><span class="link link_theme_normal dropdown-menu__switcher i-bem" tabindex="0" role="button" data-bem="{&quot;link&quot;:{&quot;_tabindex&quot;:&quot;0&quot;,&quot;origTabindex&quot;:&quot;0&quot;}}">ещё</span>
-                                            <div
-                                                class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes dropdown-menu__popup dropdown-menu__popup_size_m dropdown-menu__popup_theme_header2 dropdown__popup i-bem popup_js_inited">
-                                                <div class="popup__under"></div><i class="popup__tail"></i>
-                                                <div class="popup__content">
-                                                    <div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu">
-                                                        <ul class="b-menu-vert__layout">
-                                                            <ul class="list"></ul>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                        </div>
-                            </div>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    
+        <div class="header">
+            <div class="logo">
+                <a class="logor" href="https://yandex.ua/" >Я</a>
+                <a class="logo1" href="https://yandex.ua/" >ндекс</a>
+                <a class="logo2" href="https://taxi.yandex.ua/?lang=ru#index" >Такси</a>
+                <a class="logo2" href="https://taxi.yandex.ua/#index">Заказ такси</a>
+                <a class="logo2" href="https://yandex.ua/support/taxi/?lang=ru">Служба поддержки</a>
+                <a class="hright" href="https://passport.yandex.ua/passport?mode=passport"><button type="button" tabindex="0" title="Войти"><img src="La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="">Войти</button></a>
             </div>
-            <div class="header2__nav"><a class="user i-bem user_js_inited" href="https://passport.yandex.ua/passport?mode=passport" data-bem="{&quot;user&quot;:{&quot;uid&quot;:&quot;&quot;,&quot;login&quot;:&quot;&quot;}}" tabindex="-1" role="group"><button class="button button_pseudo_yes button_size_m button_theme_pseudo user__enter i-bem button_js_inited" type="button" autocomplete="off" tabindex="0" title="Войти" aria-label="Войти" data-bem="{&quot;button&quot;:{}}"><span class="button__text"><img class="image button__icon button__icon_16_enter" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><span class="user__enter-label" aria-hidden="true">Войти</span></span></button><form class="auth domik domik_type_hidden i-bem domik_js_inited" method="post" action="https://passport.yandex.ua/auth" role="form" aria-label="Авторизация" style="display:none"><input name="login"><input name="passwd" type="password"><input class="auth__hidden auth__retpath" type="hidden" name="retpath"><input class="auth__hidden auth__from" type="hidden" name="from"><input class="auth__hidden auth__origin" type="hidden" name="origin"><input class="auth__hidden auth__timestamp" type="hidden" name="timestamp"></form></a></div>
+
         </div>
-    </div>
-    <div class="service-menu clearfix">
-        <div class="layout layout_type_service-menu">
-            <div class="layout__col">
-                <div class="service-menu-list" role="navigation"><span class="service-menu-list__item"><div class="dropdown-menu dropdown-menu_theme_ffffff dropdown-menu_size_m lang-switcher lang-switcher_noflags_yes i-bem" data-bem="{&quot;dropdown-menu&quot;:{},&quot;lang-switcher&quot;:{&quot;hash&quot;:true}}"><span class="lang-switcher__lang lang-switcher__lang_selected_yes link link_pseudo_yes dropdown-menu__switcher i-bem" role="button" tabindex="0" data-bem="{&quot;link&quot;:{}}"><span class="lang-switcher__lang-name">Ru</span></span>
-                    <div
-                        class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes lang-switcher__popup-content dropdown-menu__popup dropdown-menu__popup_size_m dropdown__popup">
-                        <div class="popup__under"></div><i class="popup__tail"></i>
-                        <div class="popup__content">
-                            <div class="b-menu-vert dropdown-menu__menu dropdown-menu__menu_theme_ffffff" role="menu">
-                                <ul class="b-menu-vert__layout">
-                                    <li class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_first"><a class="lang-switcher__lang" href="https://taxi.yandex.ua/?lang=uk" role="button" tabindex="0" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;url&quot;:&quot;/?lang=uk&quot;}}"><span class="lang-switcher__lang-name">Uk</span></a></li>
-                                    <li
-                                        class="b-menu-vert__layout-unit b-menu-vert__layout-unit_position_last"><span class="lang-switcher__lang lang-switcher__lang_selected_yes" data-bem="{&quot;lang-switcher__lang&quot;:{&quot;url&quot;:&quot;/?lang=ru&quot;}}"><span class="lang-switcher__lang-name">Ru</span></span>
-                                        </li>
-                                </ul>
-                            </div>
-                        </div>
-                </div>
+
+        <div class="footer_menu">
+            <div class="lang">Ru</div <ul class="popup">
+            <li><a href="https://taxi.yandex.ua/?lang=uk">Uk</a></li>
+            <li><a href="https://taxi.yandex.ua/?lang=ru">Ru</a></li>
+            </ul>
+
+            <a href="https://taxi.yandex.ua/about/?lang=ru">О сервисе</a>
+            <a href="https://taxi.yandex.ua/#mrt">Тарифы</a>
+            <a href="https://taxi.yandex.ua/#parkdetails">Службы такси</a>
+            <a href="https://taxi.yandex.ua/partnership/?lang=ru">Для партнёров</a>
+            <a href="https://legal.yandex.ua/taxi_termsofuse/?lang=ru">Пользовательское соглашение</a>
+            <a href="https://m.taxi.yandex.ua/?lang=ru">Мобильная версия</a>
+        </div>
+
+
+        <div class="copy">© 2017 ООО «<a href="https://yandex.ua/">Яндекс</a>»
+        </div>
+
+        <div class="order_head">
+            <div class="order"><a href="https://taxi.yandex.ua/#orders">Посмотреть</a></div>
+
+            <div class="order">Текущие заказы</div>
+        </div>
+
+
+        <div class="taxi">
+
+            <div class="zvidky"><label class="inp_zvidky" id="forma_zvidky">Откуда</label>
+                <input class="inp_ctr" id="addressFr">
             </div>
-            </span><a class="service-menu-list__item" href="https://taxi.yandex.ua/about/?lang=ru">О сервисе</a><a class="service-menu-list__item" data-class-service-menu-list__item_current_yes="router.url | routerUrl mrt" data-class-i-hidden="launch.is_max_tariffs | not"
-                href="https://taxi.yandex.ua/#mrt">Тарифы</a><a class="service-menu-list__item" data-class-service-menu-list__item_current_yes="router.url | routerUrl parkdetails" data-metrika="| goal clck_parkDetails" href="https://taxi.yandex.ua/#parkdetails">Службы такси</a>
-            <a
-                class="service-menu-list__item" href="https://taxi.yandex.ua/partnership/?lang=ru">Для партнёров</a><a class="service-menu-list__item" href="https://legal.yandex.ua/taxi_termsofuse/?lang=ru">Пользовательское соглашение</a><a class="service-menu-list__item" href="https://m.taxi.yandex.ua/?lang=ru">Мобильная версия</a></div>
-    </div>
-    <div class="layout__col">
-        <div class="copyright">©&nbsp;<span class="copyright__dates">2017</span>&nbsp;&nbsp;ООО «<a class="copyright__link" href="https://yandex.ua/">Яндекс</a>»</div>
-    </div>
-    </div>
-    </div><noscript class="noscript">&lt;div class="noscript__text"&gt;В вашем браузере не поддерживается или выключен JavaScript. Пожалуйста, установите или включите его, чтобы продолжить работу с сайтом.&lt;/div&gt;</noscript>
-    <div class="layout layout_type_body layout_wrap_normal layout_view-name_index clearfix"
-        role="main" style="display: block;">
-        <div class="layout__col">
-            <div class="island island_padding_normal order i-bem" data-bem="{&quot;order&quot;:{}}">
-                <div class="js-orders-indexView i-hidden" data-class-i-hidden="orders.orders | length">
-                    <div class="orders-index">
-                        <div class="orders-index__head">
-                            <div class="orders-index__button"><a class="button button_size_s button_theme_normal i-bem" href="https://taxi.yandex.ua/#orders" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Посмотреть</span></a></div>
-                            <div class="orders-index__title">
-                                <div class="orders-index__header">Текущие заказы</div><span class="counter" data-text="orders.orders | getLength">0</span></div>
-                        </div>
-                        <div class="orders-index__list">
-                            <!-- rivets: each-item -->
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-taxi">
-                    <div class="grid-taxi__row">
-                        <div class="geo-group">
-                            <div class="geo-group__col"><span class="input input_size_s input_suggest_yes input_theme_normal input_location_yes input_direction_from input_spinner_yes i-bem input_js_inited" data-bem-auto-init="" data-bem="{&quot;input&quot;:{&quot;dataprovider&quot;:{&quot;name&quot;:&quot;i-taxi-dataprovider&quot;},&quot;popupMods&quot;:{&quot;size&quot;:&quot;s&quot;,&quot;fade&quot;:&quot;yes&quot;},&quot;debounceDelay&quot;:400,&quot;showListOnFocus&quot;:false,&quot;direction&quot;:&quot;from&quot;,&quot;live&quot;:false}}"><label class="input__hint input__hint_visibility_visible" id="hintaddressFrom" for="addressFrom" aria-hidden="true">Откуда</label><span class="input__box"><div class="spinner spinner_size_s i-bem spinner_js_inited"><div class="spinner__circle"></div></div><span class="input__location"></span>
-                                <span
-                                    class="input__clear" unselectable="on">&nbsp;</span><input class="input__control" id="addressFrom" name="gfrom" aria-labelledby="labeladdressFrom hintaddressFrom" autocomplete="off"></span><span class="input__samples i-hidden" data-class-i-hidden="routeHistory.routes | length"
-                                        role="list"><!-- rivets: each-route --></span></span>
-                            </div>
-                            <div class="geo-group__sep"><button class="geo-group__swap js-swap-address" type="button" role="button" alt="change"></button></div>
-                            <div class="geo-group__col"><span class="input input_size_s input_suggest_yes input_theme_normal input_direction_to input_spinner_yes i-bem input_js_inited" data-bem-auto-init="" data-bem="{&quot;input&quot;:{&quot;dataprovider&quot;:{&quot;name&quot;:&quot;i-taxi-dataprovider&quot;},&quot;popupMods&quot;:{&quot;size&quot;:&quot;s&quot;,&quot;fade&quot;:&quot;yes&quot;},&quot;debounceDelay&quot;:400,&quot;showListOnFocus&quot;:false,&quot;direction&quot;:&quot;to&quot;,&quot;live&quot;:false}}"><label class="input__hint input__hint_visibility_visible" id="hintaddressTo" for="addressTo" aria-hidden="true">Куда</label><span class="input__box"><div class="spinner spinner_size_s"><div class="spinner__circle"></div></div><span class="input__clear" unselectable="on">&nbsp;</span>
-                                <input
-                                    class="input__control" id="addressTo" name="gto" aria-labelledby="labeladdressTo hintaddressTo" autocomplete="off"></span><span class="input__samples i-hidden" data-class-i-hidden="routeHistory.routes | length" role="list"><!-- rivets: each-route --></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-taxi__row grid-taxi__row_mt_small grid-taxi__row_cols_3 clearfix">
-                        <div class="grid-taxi__col">
-                            <div class="b-datetime-selects i-bem b-datetime-selects_js_inited" data-bem-auto-init="" data-bem="{&quot;b-datetime-selects&quot;:{}}"><span class="select select_size_s select_theme_normal select_datetime_select select_layout_fixed-210 i-bem select_js_inited" data-bem-auto-init="" data-bem-select-redraw="launch.exact_orders" data-bem="{&quot;select&quot;:{&quot;popupMods&quot;:{&quot;animate&quot;:&quot;yes&quot;,&quot;type&quot;:&quot;datetime&quot;},&quot;live&quot;:false}}"><button class="button button_arrow_down button_theme_normal button_size_s select__button i-bem button_js_inited" type="button" autocomplete="off" role="listbox" aria-haspopup="true" aria-expanded="false" id="datetimeSelect" data-bem="{&quot;button&quot;:{}}"><span class="button__text">На ближайшее время</span></button>
-                                <select
-                                    class="select__control" id="uniq14850034917917" name="orderDate" tabindex="-1" aria-hidden="true">
-                                    <option class="select__option" value="0" selected="selected">На ближайшее время</option>
-                                    <option class="select__option" value="10">Через 10 минут</option>
-                                    <option class="select__option" value="15">Через 15 минут</option>
-                                    <option class="select__option" value="custom" data-disabled="launch.exact_orders | not" disabled="">Другое время</option>
-                                    </select>
-                                    </span>
-                                    <div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_datetime_popup popup_type_othertime i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;axis&quot;:&quot;left&quot;}}}">
-                                        <div class="popup__under"></div><i class="popup__tail"></i>
-                                        <div class="popup__content">
-                                            <div class="grid-taxi">
-                                                <div class="grid-taxi__row">
-                                                    <div class="grid-taxi__col"><span class="radio-button radio-button_size_s radio-button_theme_normal radio-button_datetime_day i-bem radio-button_js_inited" data-bem="{&quot;radio-button&quot;:{&quot;live&quot;:false}}"><label class="radio-button__radio radio-button__radio_checked_yes radio-button__radio_side_left" for="uniq14850034917919"><input class="radio-button__control" value="0" checked="checked" id="uniq14850034917919" type="radio" name="datetime-day"><span class="radio-button__text">Сегодня</span></label>
-                                                        <label
-                                                            class="radio-button__radio" for="uniq148500349179110"><input class="radio-button__control" value="1" id="uniq148500349179110" type="radio" name="datetime-day"><span class="radio-button__text">Завтра</span></label><label class="radio-button__radio radio-button__radio_side_right"
-                                                                for="uniq148500349179111"><input class="radio-button__control" value="2" id="uniq148500349179111" type="radio" name="datetime-day"><span class="radio-button__text">Послезавтра</span></label></span>
-                                                    </div>
-                                                    <div class="grid-taxi__col"><span class="input input_size_s input_theme_normal input_clear_no input_datetime_time i-bem input_js_inited" style="width: 48px" data-bem-auto-init="" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><input class="input__control" id="uniq14850034917918" name="datetime-time" aria-labelledby="labeluniq14850034917918 hintuniq14850034917918" maxlength="5"></span></span>
-                                                    </div>
-                                                </div>
-                                                <div class="grid-taxi__row">
-                                                    <div class="grid-taxi__col"><button class="button button_size_s button_theme_normal button_action_cancel i-bem button_js_inited" type="button" autocomplete="off" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Назад</span></button></div>
-                                                    <div
-                                                        class="grid-taxi__col"><button class="button button_size_s button_theme_action button_action_done i-bem button_js_inited" type="button" autocomplete="off" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Готово</span></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-taxi__col js-requirements-placeholder">
-                        <div>
-                            <div class="dropdown js-requirements-dropdown dropdown_action_closed i-bem dropdown_js_inited" data-bem-auto-init="" data-bem="{&quot;dropdown&quot;:{&quot;switcherBlock&quot;:&quot;button&quot;}}"><button class="button button_size_s button_theme_normal button_arrow_down button_preset_requirements dropdown__switcher i-bem button_js_inited button_disabled_yes" type="button" autocomplete="off" data-bem-button-disabled="launch.is_requirements | not"
-                                    data-metrika-rich-goal-once="|goal clck_requirements" data-bem="{&quot;button&quot;:{}}" aria-haspopup="true" aria-expanded="false" disabled="disabled"><span class="button__text"><img class="image image_name_auto button__icon button__icon_16_auto" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt=""><span class="button__requirements-text">Требования</span><i class="requirements-count" data-hide="requirementsButton.count | not" data-text="requirementsButton.count" style="display: none;">0</i></span></button>
-                                <div
-                                    class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_type_requirements dropdown__popup i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:[&quot;bottom&quot;,&quot;right&quot;],&quot;marginBottom&quot;:60}}">
-                                    <div class="popup__under"></div><i class="popup__tail"></i>
-                                    <div class="popup__content">
-                                        <div class="requirements"></div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-taxi__col grid-taxi__col_align_right"><span class="input input_size_s input_preset_phone input_theme_normal i-bem input_js_inited" data-bem-auto-init="" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><label class="input__hint input__hint_visibility_visible" id="hintuniq14850034917913" for="phoneNumber" aria-hidden="true">Телефон</label><span class="input__box"><span class="input__clear" unselectable="on">&nbsp;</span>
-                    <input
-                        class="input__control" id="phoneNumber" name="phone" aria-labelledby="labeluniq14850034917913 hintuniq14850034917913" data-value="auth.phone_input" autocomplete="off" autocapitalize="off"></span>
-                        </span>
-                </div>
+            <button class="change" type="button" alt="change"></button>
+            <div class="kuda"><label class="inp_kuda" id="foma_kuda">Куда</label>
+                <input class="inp_ctr" id="addressTo">
             </div>
-            <div class="grid-taxi__row grid-taxi__row_type_preference">
-                <div class="grid-taxi__col" data-class-i-hidden="launch.is_max_tariffs | not"><label class="check-button check-button_size_s check-button_theme_pseudo-link api-mrt__button i-bem check-button_js_inited" data-bem-auto-init="" data-bem-check-button-disabled="launch.is_max_tariffs | not" for="uniq14850034917914" data-bem="{&quot;check-button&quot;:{&quot;live&quot;:false}}"><input class="check-button__control" id="uniq14850034917914" role="button" aria-labelledby="textuniq14850034917914" aria-pressed="false" value="1" type="checkbox"><span class="check-button__text" id="textuniq14850034917914">Тарифы</span></label></div>
-                <div
-                    class="grid-taxi__col"><label class="check-button check-button_size_s check-button_theme_pseudo-link api-comments__button i-bem check-button_js_inited" data-metrika-rich-goal-once="| goal clck_comment" data-bem-auto-init="" data-bem-check-button-disabled="launch.taxiAvailable | not"
-                        for="uniq14850034917915" data-bem="{&quot;check-button&quot;:{&quot;live&quot;:false}}"><input class="check-button__control" id="uniq14850034917915" role="button" aria-labelledby="textuniq14850034917915" aria-pressed="false" value="1" type="checkbox"><span class="check-button__text" id="textuniq14850034917915">Комментарий к заказу</span></label></div>
         </div>
-        <div class="grid-taxi__row api-comments api-comments_hide_yes i-bem api-comments_js_inited" data-bem="{&quot;api-comments&quot;:{}}"><span class="input input_type_textarea input_size_s input_theme_normal i-bem input_js_inited" data-bem="{&quot;input&quot;:{&quot;live&quot;:false}}"><span class="input__box"><span class="input__clear" unselectable="on">&nbsp;</span>
-            <textarea
-                class="input__control" id="uniq14850034917912" name="comment" aria-labelledby="labeluniq14850034917912 hintuniq14850034917912" rows="4" cols="10" data-value="order.comment"></textarea>
-                </span>
-                </span>
+
+        <div class="chas_taxi">
+            <select class="select_time">
+                                    <option value="0" selected="selected">На ближайшее время</option>
+                                    <option value="10">Через 10 минут</option>
+                                    <option value="15">Через 15 минут</option>
+                                    <option value="custom">Другое время</option>
+                                </select>
         </div>
-        <div class="grid-taxi__separator"></div>
-        <div class="grid-taxi__row clearfix">
-            <div class="grid-taxi__col grid-taxi__col_float_left grid-taxi__col_width_1-of-3" data-class-i-hidden="launch.taxiAvailable | not"><span class="select select_size_service-level select_theme_normal select_type_servicelevels js-placeholder js-placeholder_view_service-levels i-bem select_js_inited" data-bem-auto-init="" data-bem-select-numeric="order.select_serviceLevel"
-                    data-bem="{&quot;select&quot;:{&quot;popupMods&quot;:{&quot;animate&quot;:&quot;yes&quot;},&quot;live&quot;:false}}"><button class="button button_arrow_down button_theme_normal button_size_service-level select__button i-bem button_js_inited" type="button" autocomplete="off" role="listbox" aria-haspopup="true" aria-expanded="false" id="routestats" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Эконом от 25,0&nbsp;грн</span></button>
-                <select
-                    class="select__control" id="uniq14850034917916" name="routestats" tabindex="-1" aria-hidden="true">
-                    <option class="select__option" value="50">Эконом от 25,0&nbsp;грн</option>
-                    <option class="select__option" value="70">Комфорт от 35,0&nbsp;грн</option>
+        <div class="taxi_day">
+            <label><input value="1" type="radio">Завтра</label>
+            <label><input value="2" type="radio">Послезавтра</label>
+
+        </div>
+
+        <div class="taxi_select">
+            <button type="button">Назад</button>
+            <button type="button">Готово</button>
+        </div>
+
+
+        <div class="dropdown"><img src="La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="">Требования
+        </div>
+
+
+        <div class="taxi_tel"><label>Телефон</label><input class="inp_tel" id="telefon">
+
+        </div>
+
+        <div class="taxi_brown">
+            <a href="https://taxi.yandex.ua/#mrt">Тарифы</a>
+            <a id="txt_com" href="#">Комментарий к заказу</a>
+            <textarea class="txt_click" rows="4" cols="10"></textarea>
+        </div>
+
+        <div class="separator">
+            <div class="taxi_cost"><button><span>Эконом от 25,0&nbsp;грн</span></button>
+                <select>
+                       <option value="50">Эконом от 25,0&nbsp;грн</option>
+                       <option value="70">Комфорт от 35,0&nbsp;грн</option>
                     </select>
-                    </span>
+
             </div>
-            <div class="grid-taxi__col grid-taxi__col_float_left grid-taxi__col_width_1-of-3"><button class="button button_size_xl button_theme_normal button_action_demo button_width_full js-demo-order i-bem button_js_inited i-hidden" type="button" autocomplete="off" data-bem-auto-init="" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Демо-заказ</span></button></div>
-            <div
-                class="grid-taxi__col grid-taxi__col_float_right" data-class-i-hidden="launch.taxiAvailable | not"><button class="button button_size_xl button_theme_action js-order-button i-bem button_js_inited" type="button" autocomplete="off" data-bem="{&quot;button&quot;:{}}"><span class="button__text">Вызвать такси</span></button></div>
-    </div>
-    <div class="grid-taxi__row grid-taxi__row_mt_small">
-        <div class="routestats">
-            <div class="routestats__loader i-hidden" data-class-i-hidden="displayModel.isLoading | not">
-                <div class="spinner spinner_size_s i-bem spinner_js_inited" data-bem-spinner="displayModel.isLoading">
-                    <div class="spinner__circle"></div>
-                </div>&nbsp;Рассчитываем стоимость поездки</div>
-            <div class="routestats__details" data-class-i-hidden="displayModel.isLoading">
-                <div class="routestats__noprice" data-hide="model.price">
-                    <div class="routestats__surge i-hidden" data-text="launch.surgeComment" data-class-i-hidden="launch.surgeComment | not"></div>
-                    <div class="routestats__hint" data-class-i-hidden="launch.surgeComment">Для расчёта приблизительной стоимости поездки заполните поля «Откуда» и «Куда».</div>
-                </div>
-                <div class="routestats__info">
-                    <div class="routestats__price" data-hide="model.price | not" style="display: none;">Приблизительная стоимость поездки — <span class="text" data-html="model.price | replaceStringOnRub руб. | replaceGrn">—</span></div>
-                </div>
-            </div>
+            <button class="button" type="button">Вызвать такси</button>
         </div>
-    </div>
-    </div>
-    </div>
-    <div class="island island_padding_normal island_type_city-promo js-citypromoView" data-hide="model.show | not" style="display: none;">
-        <div class="city-promo-details">
-            <div class="city-promo-details__content">
-                <div class="city-promo-details__item">
-                    <div class="city-promo-details__icon"><img class="image image_type_promo-time image_theme_city-promo" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="time"></div>
-                    <div
-                        class="city-promo-details__text i-font i-font_face_textbooknew" data-html="model.timeText"></div>
-            </div>
-            <div class="city-promo-details__item">
-                <div class="city-promo-details__icon"><img class="image image_type_promo-star image_theme_city-promo" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="star"></div>
-                <div
-                    class="city-promo-details__text i-font i-font_face_textbooknew" data-html="model.priceText"></div>
+
+        <div class="rozrach">&nbsp;Рассчитываем стоимость поездки
         </div>
-        <div class="city-promo-details__item city-promo-details__item_type_count">
-            <div class="city-promo-details__icon"><img class="image image_type_promo-taxi image_theme_city-promo" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif" alt="count"></div>
-            <div class="city-promo-details__text i-font i-font_face_textbooknew">
-                <div class="spinner spinner_size_s i-bem spinner_js_inited" data-bem-auto-init="" data-bem-spinner="model.isLoading" data-bem="{&quot;spinner&quot;:{}}">
-                    <div class="spinner__circle"></div>
-                </div><span class="city-promo-details__count" data-text="model.online | i18nPlural taxicount.online count"> </span></div>
+        <div class="error_hide">Для расчёта приблизительной стоимости поездки заполните поля «Откуда» и «Куда».
         </div>
-    </div>
-    </div>
-    <div class="stores stores_lang_ru">
-        <a class="link link_theme_normal i-bem" target="_blank" tabindex="0" href="https://play.google.com/store/apps/details?id=ru.yandex.taxi" data-metrika="model| goal clck_android" rel="noopener" data-bem="{&quot;link&quot;:{&quot;_tabindex&quot;:&quot;0&quot;,&quot;origTabindex&quot;:&quot;0&quot;}}">
-            <div class="stores__icon stores__icon_type_android" title="google play"></div>
-        </a>
-        <a class="link link_theme_normal i-bem" target="_blank" tabindex="0" href="https://itunes.apple.com/ru/app/andeks.taksi/id472650686?mt=8" data-metrika="model| goal clck_ios" rel="noopener" data-bem="{&quot;link&quot;:{&quot;_tabindex&quot;:&quot;0&quot;,&quot;origTabindex&quot;:&quot;0&quot;}}">
-            <div class="stores__icon stores__icon_type_ios" title="app store"></div>
-        </a>
-    </div>
-    </div>
-    </div>
-    <div class="layout__col js-placeholder js-placeholder_view_index-main">
-        <div class="geosearch-panel i-bem geosearch-panel_js_inited" data-bem="{&quot;geosearch-panel&quot;:{}}">
-            <div class="geosearch-panel__header">
-                <div class="geosearch-panel__icon"></div>
-                <div class="geosearch-panel__toggle"></div>
-                <div class="geosearch-panel__title">Уточните адрес</div>
-            </div>
-            <div class="geosearch-panel__content">
-                <div class="geosearch-results i-bem geosearch-results_js_inited" data-bem="{&quot;geosearch-results&quot;:{}}">
-                    <div class="geosearch-results__list">
-                        <!-- rivets: each-object -->
-                    </div>
-                </div>
-            </div>
+        <div class="info_hide">Приблизительная стоимость поездки — <span data-html="model.price | replaceStringOnRub руб. | replaceGrn">—</span>
         </div>
-        <div class="geosearch-panel i-bem geosearch-panel_js_inited" data-bem="{&quot;geosearch-panel&quot;:{}}">
-            <div class="geosearch-panel__header">
-                <div class="geosearch-panel__icon"></div>
-                <div class="geosearch-panel__toggle"></div>
-                <div class="geosearch-panel__title">Уточните адрес</div>
-            </div>
-            <div class="geosearch-panel__content">
-                <div class="geosearch-results i-bem geosearch-results_js_inited" data-bem="{&quot;geosearch-results&quot;:{}}">
-                    <div class="geosearch-results__list">
-                        <!-- rivets: each-object -->
-                        <div class="geosearch-results__item" data-class-geosearch-results__item_state_hovered="object.state | state hovered" data-id="object:cid" id="c253">
-                            <div class="geosearch-result">
-                                <div class="geosearch-result__title"><span class="text text_color_gray" data-text="object.num"></span>.&nbsp;<span class="text" data-text="object.short_text">Креховський монастир</span></div>
-                                <div class="geosearch-result__info" data-text="object.full_text">Украина, Украина, Львов, Креховський монастир</div>
-                            </div>
-                        </div>
-                        <div class="geosearch-results__item" data-class-geosearch-results__item_state_hovered="object.state | state hovered" data-id="object:cid" id="c255">
-                            <div class="geosearch-result">
-                                <div class="geosearch-result__title"><span class="text text_color_gray" data-text="object.num"></span>.&nbsp;<span class="text" data-text="object.short_text">проспект Свободы</span></div>
-                                <div class="geosearch-result__info" data-text="object.full_text">Украина, Львов, проспект Свободы</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-    <div class="taxi-notifications js-placeholder js-placeholder_view_taxi-notifications">
-        <div class="request-info request-info_hide_yes request-info_type_request island i-bem request-info_js_inited" data-bem="{&quot;request-info&quot;:{}}">
-            <div class="request-info__icon">
-                <div class="spinner spinner_size_xl i-bem spinner_js_inited" data-bem="{&quot;spinner&quot;:{}}">
-                    <div class="spinner__circle"></div>
-                </div><img class="image image_type_request-failed css-animations css-animations_type_blink" src="./Яндекс.Такси — онлайн заказ такси более чем в 50 городах. Быстрая подача. Оплата наличными или картой._files/La6qi18Z8LwgnZdsAr1qy1GwCwo.gif"
-                    alt=""></div>
-            <div class="request-info__message"></div>
-        </div>
-        <div class="taxi-notifications__col i-hidden" data-class-i-hidden="model.orders | length">
-            <!-- rivets: each-orderitem -->
-        </div>
-    </div>
-    <div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_assignment_error i-bem" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:&quot;right&quot;}}">
-        <div class="popup__under"></div><i class="popup__tail"></i>
-        <div class="popup__content">Смягчите условия поиска</div>
-    </div>
+
+        <div class="err_title">Уточните адрес</div>
+
+
     <script src="js/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.v3.3.7.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
